@@ -31,6 +31,8 @@ mod node;
 mod rpc;
 mod telemetry;
 
+mod schema;
+
 use std::future::Future;
 use std::process::ExitCode;
 

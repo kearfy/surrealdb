@@ -49,6 +49,7 @@ http = "0.2.9"
 http-body = "0.4.5"
 hyper = "0.14.27"
 ipnet = "2.8.0"
+jsonschema = "0.17.1"
 once_cell = "1.18.0"
 opentelemetry = { version = "0.19", features = ["rt-tokio"] }
 opentelemetry-otlp = { version = "0.12.0", features = ["metrics"] }
