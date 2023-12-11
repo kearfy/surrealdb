@@ -169,7 +169,7 @@ impl Processor {
 
 	async fn format(&mut self, out: Strand) -> Result<Value, Error> {
 		match out.as_str() {
-			"json" | "application/json" => self.format = OutputFormat::Json,
+			"json" | "application/json" => self.format = OutputFormat::Json(None),
 			"cbor" | "application/cbor" => self.format = OutputFormat::Cbor,
 			"pack" | "application/pack" => self.format = OutputFormat::Pack,
 			_ => return Err(Error::InvalidType),

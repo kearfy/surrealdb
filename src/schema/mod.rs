@@ -3,6 +3,7 @@ use crate::rpc::res::Failure;
 
 pub mod typed_surrealql_v1;
 
+#[derive(Debug, Clone, Copy, Eq, PartialEq)]
 pub enum Schema {
 	TypedSurrealQLV1,
 }

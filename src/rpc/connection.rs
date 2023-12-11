@@ -39,7 +39,7 @@ impl Connection {
 		// Create a new RPC variables store
 		let vars = BTreeMap::new();
 		// Set the default output format
-		let format = OutputFormat::Json;
+		let format = OutputFormat::Json(None);
 		// Enable real-time mode
 		session.rt = true;
 

@@ -298,7 +298,7 @@ impl Into<Value> for TypedValue {
 
 		v.insert("type".to_string(), Value::Strand(self.r#type.into()));
 		if let Some(value) = self.value {
-			v.insert("type".to_string(), value);
+			v.insert("value".to_string(), value);
 		}
 
 		Value::Object(Object(v))
